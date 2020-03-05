@@ -88,7 +88,7 @@ class UsersController extends BaseController
 
         $user = new Users();
         $user->username = $data['username'];
-        $user->password = $data['password'];
+        $user->password = password_hash($data['password'], PASSWORD_BCRYPT, ['12']);
 
         try {
             if ($user->save()) {
