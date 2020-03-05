@@ -1,0 +1,25 @@
+paths:
+  migrations: '%%PHINX_CONFIG_DIR%%/db/migrations'
+  seeds: '%%PHINX_CONFIG_DIR%%/db/seeds'
+
+environments:
+  default_migration_table: phinxlog
+  default_database: development
+  development:
+    adapter: mysql
+    host: mysql
+    name: contact_list
+    user: root
+    pass: example
+    charset: utf8
+
+  development.testmode:
+    adapter: sqlite
+    host: localhost
+    name: '../../tests/acceptancetests/runtime/bdd.test.sqlite'
+    user: ''
+    pass: ''
+    port: ''
+    charset: utf8
+
+version_order: creation

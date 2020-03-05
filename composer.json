@@ -1,0 +1,33 @@
+{
+  "name": "ismail.atkurt/phalcon-test",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "İsmail Atkurt",
+      "email": "ismail.atkurt@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "phalcon/devtools": "^4.0",
+    "phalcon/migrations": "^1.1",
+    "ext-json": "*",
+    "robmorgan/phinx": "^0.11.4",
+    "fzaninotto/faker": "^1.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "ReachPhalcon\\Application\\": "./application",
+      "ReachPhalcon\\": "./src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ReachPhalcon\\Tests\\": "./tests/unittests/src"
+    }
+  }
+}
