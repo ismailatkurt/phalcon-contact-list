@@ -46,7 +46,7 @@ http://localhost/app#/
 
 ## Some details about application environment
 
-Application uses 3 different docker images; mysql, php, nginx.
+Application uses 3 different docker images; mysql, php (7.4), nginx.
 
 Build files of php and nginx can be found under **docker** directory.
 
