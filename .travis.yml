@@ -5,7 +5,18 @@ dist: trusty
 php:
   - 7.4
 
+env:
+  global:
+    - PSR_VERSION=0.7.0
+    - PHALCON_VERSION=4.0.2
+    - PHALCON_EXT_PATH=php7/64bits
+
 before_install:
   - composer install
+
+install:
+  - curl -LO https://github.com/jbboehr/php-psr/archive/v${PSR_VERSION}.tar.gz
+  - tar xzf ${PWD}/v${PSR_VERSION}.tar.gz
+
 script:
   - phpunit --configuration tests/unittests/phpunit.xml tests/unittests
