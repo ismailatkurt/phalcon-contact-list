@@ -36,6 +36,7 @@ to create production ready build
 
 ```
 cd /project/path/react_src
+npm install
 npm run-script build
 ```
 
