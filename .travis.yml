@@ -1,0 +1,9 @@
+anguage: php
+
+sudo: required
+dist: trusty
+php:
+  - 7.4
+
+script:
+  - phpunit --configuration tests/unittests/phpunit.xml tests/unittests
