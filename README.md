@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ismailatkurt/phalcon-contact-list.svg?branch=master)](https://travis-ci.org/ismailatkurt/phalcon-contact-list)
 
 # How to guide
 
