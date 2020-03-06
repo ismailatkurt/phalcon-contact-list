@@ -12,11 +12,9 @@ env:
     - PHALCON_EXT_PATH=php7/64bits
 
 before_install:
-  - composer install
-
-install:
   - curl -LO https://github.com/jbboehr/php-psr/archive/v${PSR_VERSION}.tar.gz
   - tar xzf ${PWD}/v${PSR_VERSION}.tar.gz
+  - composer install
 
 script:
   - phpunit --configuration tests/unittests/phpunit.xml tests/unittests
