@@ -63,4 +63,4 @@ Build files of php and nginx can be found under **docker** directory.
   - seeders
     - seeding admin and test user
     - seeding sample contacts for users **separately**. Meaning every user can have their own contacts attached to their user id.
-  - unit tests
+- unit tests
