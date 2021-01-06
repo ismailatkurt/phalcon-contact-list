@@ -17,7 +17,7 @@
   "dependencies": {
     "@popperjs/core": "^2.0.6",
     "admin-lte": "^2.4.8",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^3.3.7",
     "history": "^4.7.2",
     "jquery": "^3.3.1",
